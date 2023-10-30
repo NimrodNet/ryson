@@ -4,7 +4,6 @@ from moduly.linia.linia import *
 from moduly.piksel.piksel import *
 import math
 from moduly.elipsa.elipsa import *
-from moduly.elipsa.okrag import *
 
 rozmiar_tla = [400, 500]
 tlo = Prostokat(rozmiar_tla)
@@ -19,7 +18,9 @@ piksel.rysuj([50, 10], (0, 0, 255))
 elipsa = Elipsa(tlo, [50, 50], [200, 120])
 elipsa.rysuj()
 
-okrag = Okrag(tlo, [70, 80], 130)
+promien = 120
+szerokosc = promien * 2;
+okrag = Elipsa(tlo, [70, 80], [szerokosc, szerokosc])
 okrag.rysuj()
 
 tlo.zapisz("tlo.jpg")
