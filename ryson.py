@@ -4,6 +4,7 @@ from moduly.linia.linia import *
 from moduly.piksel.piksel import *
 import math
 from moduly.elipsa.elipsa import *
+from moduly.kat.kat import *
 
 rozmiar_tla = [400, 500]
 tlo = Prostokat(rozmiar_tla)
